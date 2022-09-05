@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
 
-function App() {
+import { Route, Routes } from "react-router-dom";
+
+//CSS
+import "./App.css";
+
+//Components
+import Home from "./Components/Home/Home";
+import Posts from "./Components/Posts/Posts";
+import Saved from "./Components/Saved/Saved";
+import Videos from "./Components/Videos/Videos";
+
+//Contexts
+import ChangeModeContextProvider from "./Contexts/ChangeModeContextProvider";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <section className="App">
+      <ChangeModeContextProvider>
+        <Routes>
+          <Route path="/" element={<Home />} >
+            <Route path="/" element={<Posts />} />
+            <Route path="/saved" element={<Saved />} />
+            <Route path="/videos" element={<Videos />} />
+            <Route path="/newsfeed" />
+          </Route>
+        </Routes>
+      </ChangeModeContextProvider>
+    </section>
   );
-}
+};
 
 export default App;

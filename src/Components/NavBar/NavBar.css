@@ -1,0 +1,56 @@
+.NavBar{
+    width: 100%;
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 0 35px -5px silver;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+/* #dark .NavBar{
+    background-color: #151221;
+} */
+
+.contentNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contentNav .profile{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.contentNav .profile img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.contentNav .profile .createBtn{
+    padding: 10px 30px;
+    border-radius: 20px;
+    background: linear-gradient(45deg,#9C62F6, #5F48D2);
+    color: #fff;
+}
+
+.contentNav input{
+    padding: 10px;
+    width: 40%;
+    border-radius: 20px;
+    background-color: #F0EEF6;
+}
+
+@media only screen and (max-width: 768px) {
+    .contentNav input {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .contentNav h2 {
+        font-size: 18px;
+    }
+}
