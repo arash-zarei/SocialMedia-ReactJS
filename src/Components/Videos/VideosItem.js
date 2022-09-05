@@ -18,6 +18,10 @@ const VideoItem = ({url}) => {
     border-radius: 10px;
     position: relative;
     overflow: hidden;
+    @media only screen and (max-width: 400px){
+        width: 100px;
+        height: 100px;
+    }
     `
 
     return (

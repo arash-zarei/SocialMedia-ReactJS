@@ -19,6 +19,10 @@ const SavedItem = ({url, type, view, comments}) => {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+    @media only screen and (max-width: 400px){
+        width: 100px;
+        height: 100px;
+    }
     `
 
     return (
