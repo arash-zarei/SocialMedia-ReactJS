@@ -124,6 +124,9 @@
 
   .right{
     width: 50%;
+    height: 400px;
+    overflow-y: auto;
+    border-radius: 20px;
     position: absolute;
     right: -100%;
     top: 0;
