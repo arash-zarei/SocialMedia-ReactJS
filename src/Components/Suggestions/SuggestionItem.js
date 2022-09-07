@@ -9,8 +9,8 @@ const SuggestionItem = ({image, name}) => {
             <img src={image} alt="profile" />
             <p>{name}</p>
             <div className='btnSuggestion'>
-                <button className='Add'>Accept</button>
-                <button className='Remove'>Cancel</button>
+                <button className='Accept'>Accept</button>
+                <button className='Cancel'>Cancel</button>
             </div>
         </div>
     );

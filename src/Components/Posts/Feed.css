@@ -1,13 +1,24 @@
 .Feed{
     padding: 15px;
-    background-color: #fff;
     text-align: center;
     border-radius: 20px;
     margin-bottom: 25px;
 }
 
+#light .Feed{
+    background-color: #fff;
+}
+
+#dark .Feed{
+    background-color: #151221;
+}
+
 .Feed svg{
     cursor: pointer;
+}
+
+#dark .Feed svg{
+    color: #fff;
 }
 
 .Feed .feed_profile{
@@ -24,6 +35,11 @@
 .feed_profile .feed_title p:nth-child(1){
     font-weight: bold;
 }
+
+#dark .feed_profile .feed_title p:nth-child(1){
+    color: #fff;
+}
+
 .feed_profile .feed_title p:nth-child(2){
     color: #98979b;
     font-size: 13px;
@@ -64,15 +80,22 @@
     display: flex;
     align-items: center;
     margin-bottom: 10px;
-    /* justify-content: flex-start; */
 }
 
 .likes img{
     width: 25px;
     height: 25px;
     border-radius: 50%;
+}
+
+#light .likes img{
     border: 2px solid #fff;
 }
+
+#dark .likes img{
+    border: 2px solid #151221;
+}
+
 .likes img:nth-child(2),
 .likes img:nth-child(3){
     margin-left: -12px;
@@ -84,9 +107,17 @@
     text-align: left;
 }
 
+#dark .likes p{
+    color: #fff;
+}
+
 .title_body{
     text-align: left;
     font-size: 14px;
+}
+
+#dark .title_body p:nth-child(1){
+    color: #fff;
 }
 
 .title_body P:nth-child(2){

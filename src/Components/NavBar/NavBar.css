@@ -1,16 +1,20 @@
 .NavBar{
     width: 100%;
-    background-color: #fff;
     padding: 15px 0;
-    box-shadow: 0 0 35px -5px silver;
     position: sticky;
     top: 0;
     z-index: 50;
 }
 
-/* #dark .NavBar{
+#light .NavBar{
+    background-color: #fff;
+    box-shadow: 0 0 35px -5px silver;
+}
+
+#dark .NavBar{
     background-color: #151221;
-} */
+    box-shadow: none;
+}
 
 .contentNav{
     display: flex;
@@ -40,7 +44,27 @@
     padding: 10px;
     width: 40%;
     border-radius: 20px;
+}
+
+#light .contentNav input{
     background-color: #F0EEF6;
+}
+
+#dark .contentNav input{
+    background-color: #0a0911;
+    color: #fff;
+}
+
+#dark .contentNav input::placeholder{
+    color: #b8b3b3;
+}
+
+#light .contentNav h2{
+    color: #000;
+}
+
+#dark .contentNav h2{
+    color: #fff;
 }
 
 @media only screen and (max-width: 768px) {

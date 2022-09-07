@@ -5,10 +5,18 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    background-color: #fff;
     padding: 10px 0;
     border-radius: 10px;
+
+}
+
+#light .SuggestionItem{
+    background-color: #fff;
     box-shadow: 0 0 25px -5px silver;
+}
+
+#dark .SuggestionItem{
+    background-color: #151221;
 }
 
 .SuggestionItem img{
@@ -21,6 +29,10 @@
 
 .SuggestionItem p{
     font-size: 15px;
+}
+
+#dark .SuggestionItem P{
+    color: #fff;
 }
 
 .SuggestionItem .btnSuggestion{
@@ -38,7 +50,12 @@
     cursor: pointer;
 }
 
-.btnSuggestion .Add{
+.btnSuggestion .Accept{
     color: #fff;
     background-color: #5F48D2;
+}
+
+#dark .btnSuggestion .Cancel{
+    background-color: #313030;
+    color: #fff;
 }

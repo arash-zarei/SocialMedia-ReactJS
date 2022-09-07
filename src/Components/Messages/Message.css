@@ -18,6 +18,14 @@
     font-size: 13px;
 }
 
+#light .message p:nth-child(1){
+    color: #000;
+}
+
+#dark .message p:nth-child(1){
+    color: #fff;
+}
+
 .message p:nth-child(2){
     color: #98979b;
 }

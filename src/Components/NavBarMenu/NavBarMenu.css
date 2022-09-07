@@ -1,9 +1,17 @@
-#light .NavBarMenu {
+.NavBarMenu {
   width: 100%;
-  background-color: #fff;
   padding: 15px;
   border-radius: 20px;
   margin-top: 15px;
+}
+
+#light .NavBarMenu{
+  background-color: #fff;
+}
+
+
+#dark .NavBarMenu{
+  background-color: #151221;
 }
 
 .NavBarMenu ul li a {
@@ -20,19 +28,34 @@
 
 .NavBarMenu ul li a.active {
   padding: 10px;
-  background-color: #f0eef6;
-  color: black;
   border-radius: 20px;
 }
 
-#light .addresPage {
+#light .NavBarMenu ul li a.active{
+  background-color: #f0eef6;
+  color: #000;
+}
+
+#dark .NavBarMenu ul li a.active{
+  background-color: #403d3d;
+  color: #fff;
+}
+
+.addresPage {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 10px;
-  background-color: #fff;
   padding: 15px;
   border-radius: 20px;
+}
+
+#light .addresPage{
+  background-color: #fff;
+}
+
+#dark .addresPage{
+  background-color: #151221;
 }
 
 .addresPage img {
@@ -48,16 +71,20 @@
   font-weight: bold;
 }
 
+#dark .addresPage div p:nth-child(1) {
+  color: #fff;
+}
+
 .addresPage div p:nth-child(2) {
   color: #a7a1ba;
 }
 
 @media only screen and (max-width: 992px) {
-  #light .addresPage {
+  .addresPage {
     display: none;
   }
 
-  #light .NavBarMenu{
+  .NavBarMenu{
     margin-top: 0;
   }
 
@@ -66,7 +93,6 @@
   }
 
   .NavBarMenu ul li a.active {
-    padding: 0;
     background-color: transparent;
   }
 
@@ -79,7 +105,7 @@
 
 @media only screen and (max-width: 576px){
 
-  #light .NavBarMenu{
+  .NavBarMenu{
     margin-top: 15px;
   }
 
@@ -91,8 +117,13 @@
     width: 100%;
   }
 
-  .NavBarMenu ul li a.active {
+  #light .NavBarMenu ul li a.active {
     padding: 10px;
     background-color: #f0eef6;
+  }
+
+  #dark .NavBarMenu ul li a.active {
+    padding: 10px;
+    background-color: #a7a1ba;
   }
 }

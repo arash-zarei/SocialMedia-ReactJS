@@ -2,10 +2,6 @@
     width: 100%;
 }
 
-/* .Posts img{
-    width: 50%;
-} */
-
 .Posts .storys{
     width: 100%;
     display: flex;
@@ -17,7 +13,6 @@
 .feeds{
     margin-top: 15px;
     padding: 20px;
-    /* background-color: blue; */
 }
 
 

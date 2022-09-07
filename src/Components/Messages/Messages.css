@@ -1,8 +1,25 @@
 .Messages{
     width: 100%;
-    background-color: #fff;
     padding: 15px;
     border-radius: 20px;
+}
+
+#light .Messages{
+    background-color: #fff;
+    color: #000;
+}
+
+#dark .Messages{
+    background-color: #151221;
+    color: #fff;
+}
+
+#light .Messages h4{
+    color: #000;
+}
+
+#dark .Messages h4{
+    color: #fff;
 }
 
 .Messages input{
@@ -10,8 +27,22 @@
     padding: 10px;
     border-radius: 10px;
     margin-top: 20px;
+}
+
+#light .Messages input{
     background-color: #F0EEF6;
 }
+
+#dark .Messages input{
+    background-color: #0a0911;
+    color: #fff;
+}
+
+#dark .Messages input::placeholder{
+    color: #b8b3b3;
+}
+
+/* 0a0911 */
 
 .Messages .category{
     display: flex;
@@ -24,7 +55,14 @@
     text-align: center;
     cursor: pointer;
     padding-bottom: 5px;
-    border-bottom: 3px solid black;
+}
+
+#light .Messages .category h5{
+    border-bottom: 3px solid #000;
+}
+
+#dark .Messages .category h5{
+    border-bottom: 3px solid #fff;
 }
 
 .messagesContainet{
