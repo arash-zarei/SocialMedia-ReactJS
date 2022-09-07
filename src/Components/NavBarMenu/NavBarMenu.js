@@ -68,9 +68,9 @@ const NavBarMenu = ({close}) => {
             </Link>
           </li>
           <li onClick={close}>
-            <Link to="/newsfeed">
-              <Unicons.UilNewspaper />
-              <p>News Feed</p>
+            <Link to="/suggestions">
+              <Unicons.UilUserPlus />
+              <p>Suggestions</p>
             </Link>
           </li>
         </ul>

@@ -27,3 +27,15 @@
 .status p{
     color: #fff;
 }
+
+@media only screen and (max-width: 400px){
+
+    .status{
+        gap: 5px;
+    }
+
+    .status svg:nth-child(3),
+    .status p:nth-child(4){
+        display: none;
+    }
+}
