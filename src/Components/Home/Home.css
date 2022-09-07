@@ -35,7 +35,8 @@
 }
 
 #dark .Open_close{
-  background-color: #151221;
+  background-color: #251f3b;
+  color: #fff;
 }
 
 .Open_close span:nth-child(1) {
@@ -78,7 +79,8 @@
 }
 
 #dark .Open_close_messages{
-  background-color: #151221;
+  background-color: #251f3b;
+  color: #fff;
 }
 
 @media only screen and (max-width: 992px) {

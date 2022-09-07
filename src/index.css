@@ -20,6 +20,11 @@ ul{
   list-style: none;
 }
 
+#light,
+#dark{
+  transition: background .5s;
+}
+
 .container{
   width: 80%;
   margin: 0 auto;

@@ -21,7 +21,7 @@ const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
     const [isOpenMessage, setIsOpenMessage] = useState(false)
 
-    const {mode, changed} = useContext(ChangeModeContext)
+    const {mode} = useContext(ChangeModeContext)
 
     const openHandler = () =>{
         setIsOpen(!isOpen)
