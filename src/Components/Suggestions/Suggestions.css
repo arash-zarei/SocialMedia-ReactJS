@@ -7,7 +7,7 @@
     margin-bottom: 50px;
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 360px) {
     .Suggestions{
         gap: 5px;
     }
