@@ -1,0 +1,28 @@
+.ChangeMode{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.ChangeMode button{
+    width: fit-content;
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+
+.darkColor{
+    background-color: #221f1f;
+    color: #fff;
+}
+
+.lightColor{
+    background-color: #ffff00;
+    color: #000;
+}

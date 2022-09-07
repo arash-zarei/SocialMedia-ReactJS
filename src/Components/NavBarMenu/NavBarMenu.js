@@ -11,6 +11,9 @@ import * as Unicons from "@iconscout/react-unicons";
 //Images
 import profile from "../../images/Profile.png";
 
+//Components
+import Button from "../ChangeMode/Button";
+
 const NavBarMenu = ({close}) => {
   
   const lists = useRef(null);
@@ -72,6 +75,9 @@ const NavBarMenu = ({close}) => {
               <Unicons.UilUserPlus />
               <p>Suggestions</p>
             </Link>
+          </li>
+          <li>
+            <Button />
           </li>
         </ul>
       </nav>
